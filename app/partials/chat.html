@@ -1,0 +1,30 @@
+<div class="container" style="padding:20px">
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="chatWindow">
+          <div ng-bind-html="chatOutput"/>
+          <span class="cursor">&nbsp;</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Chat entry -->
+  <div class="row">
+  	<div class="col-md-4">
+          <form novalidate class="form">
+            <div class="form-group">
+              <input type="text" placeholder="Say something interesting..." class="form-control" ng-model="chatInput" ng-keypress="chatKey($event)"/>
+            </div>
+          </form>
+    </div>
+      <div class="col-md-2">
+            <form novalidate class="form">
+              <div class="form-group">
+                <button type="submit" class="btn btn-success" ng-click="chat()">Go</button>
+              </div>
+            </form>
+      </div>
+  </div>
+</div>

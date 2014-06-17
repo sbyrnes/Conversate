@@ -1,4 +1,4 @@
 Conversate
-==========
+======
 
-A turing bot testing interface.
+A turning bot testing interface.
